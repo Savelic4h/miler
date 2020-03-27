@@ -1,0 +1,155 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+// ------------------------
+// HEADER 
+// ------------------------
+.main-page{
+  height: 100vh;
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.header__phone{
+  padding-left: 20px;
+  position: relative;
+  &:before{
+    content: "\f10a";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #555;
+  }
+  a{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  color: #fff; 
+  }
+}
+.main-page__content{
+  max-width:565px;
+  transform: translate(50%,50%);
+  text-align: center;
+}
+.main-page__content-uptitle{
+  text-transform: uppercase;
+  padding: 0 17px;
+  position: relative;
+}
+.main-page__content-title{
+  padding: 35px 0;
+  text-transform: uppercase;
+  font-size: 67px;
+  line-height: 70px;
+  font-weight: 100;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 40px;
+}
+.main-page__content-city{
+  position: relative;
+  padding: 0 21px;
+  display: inline-block;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  &:before{
+    content: "\f005";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  &:after{
+    content: "\f005";
+    font-family: 'icomoon';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    color: #555;
+  }
+}
+.main-page__content-text{
+  margin-bottom: 50px;
+  span{
+    font-weight: 700;
+  }
+}
+.main-page__bot{
+  height: 56px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #545454;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-page__bot-adress{
+  padding-left: 26px;
+  position: relative;
+  &:before{
+    content: "\f124";
+    position: absolute;
+    font-family: 'icomoon';
+    left: 0;
+    top: 0;
+    color: #555555;
+    font-size: 16px;
+  }
+}
+.main-page__bot-phone{
+  padding-left: 22px;
+  position: relative;
+  &:before{
+    content: "\f10a";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #555;
+  }
+  a{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  color: #fff; 
+  }
+}
+.main-page__bot-time{
+  padding-left: 30px;
+  position: relative;
+  &:before{
+    content: "\f017";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #555;
+  }
+}
+.main-page__content-btn{
+  padding: 20px 54px;
+  background-color: $yellow;
+  text-transform: uppercase;
+  border-radius: 3px;
+  position: relative;
+  transition: all .3s;
+  z-index: 5;
+  &:active{
+    transform: translate(0,5px); 
+  }
+}
+@import "media";
