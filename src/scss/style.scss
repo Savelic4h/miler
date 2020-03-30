@@ -399,7 +399,6 @@
   cursor: pointer;
 }
 .slider__big{
-  z-index: 500;
   .slick-track{
     display: flex !important;
     .slick-slide{
@@ -423,11 +422,10 @@
   }
 }
 .slider__thumbs{
-  z-index: 600;
+  transform: translateY(-150%);
   .slick-track{
     transform: translate3d(0,0,0) !important;
     display: flex;
-    position: absolute;
   }
   .slick-slide{
     max-width:100px !important;
