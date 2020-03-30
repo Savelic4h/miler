@@ -423,10 +423,10 @@
 }
 .slider__thumbs{
   transform: translateY(-150%);
-  position: absolute;
   .slick-track{
     transform: translate3d(0,0,0) !important;
     display: flex;
+    position: absolute;
   }
   .slick-slide{
     max-width:100px !important;
