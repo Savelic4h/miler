@@ -345,7 +345,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 85px 100px 0;
+  padding: 85px 100px;
   position: relative;
   overflow: hidden;
   &:before{
@@ -399,6 +399,7 @@
   cursor: pointer;
 }
 .slider__big{
+  z-index: 500;
   .slick-track{
     display: flex !important;
     .slick-slide{
@@ -422,7 +423,7 @@
   }
 }
 .slider__thumbs{
-  transform: translateY(-150%);
+  z-index: 600;
   .slick-track{
     transform: translate3d(0,0,0) !important;
     display: flex;
