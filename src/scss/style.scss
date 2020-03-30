@@ -421,8 +421,14 @@
     border: 4px solid #3d3c3c;
   }
 }
-.slider__thumbs{
+.slider__big__wrapper{
+  z-index: 4; 
+}
+.slider__thumbs__wrapper{
+  z-index: 5;
   transform: translateY(-150%);
+}
+.slider__thumbs{
   .slick-track{
     transform: translate3d(0,0,0) !important;
     display: flex;
