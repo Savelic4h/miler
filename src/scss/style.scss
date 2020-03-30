@@ -399,8 +399,12 @@
 }
 .slider__big{
   .slick-track{
-    display: flex;
-  }
+    display: flex !important;
+    .slick-slide{
+        left: 0;
+        top: 0;
+      }
+    }
 }
 .slider__thumbs-item{
   width:  100px;
@@ -418,9 +422,9 @@
 }
 .slider__thumbs{
   transform: translateY(-150%);
+  position: absolute;
   .slick-track{
     transform: translate3d(0,0,0) !important;
-    display: flex;
   }
   .slick-slide{
     max-width:100px !important;
