@@ -76,6 +76,8 @@ gulp.task('style', function () { //создаём единую библиоте�
     'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css',
     'node_modules/slick-carousel/slick/slick-theme.css',
     'node_modules/rateyo/min/jquery.rateyo.min.css',
+    'node_modules/swiper/css/swiper.min.css',
+    'node_modules/animate.css/animate.min.css',
   ])
     .pipe(sourcemaps.init())
     .pipe(concat('libs.min.css')) //склеиваем их в один файл с указанным именем
@@ -91,6 +93,9 @@ gulp.task('script', function () { //аналогично поступаем с j
     'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
     'node_modules/slick-carousel/slick/slick.min.js',
     'node_modules/rateyo/min/jquery.rateyo.min.js',
+    'node_modules/swiper/js/swiper.min.js',
+    'node_modules/swiper/js/swiper.min.js',
+    'node_modules/wow.js/dist/wow.js',
   ])
     .pipe(size())
     .pipe(sourcemaps.init())
