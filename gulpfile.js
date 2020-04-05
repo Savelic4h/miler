@@ -78,6 +78,10 @@ gulp.task('style', function () { //создаём единую библиоте�
     'node_modules/rateyo/min/jquery.rateyo.min.css',
     'node_modules/swiper/css/swiper.min.css',
     'node_modules/animate.css/animate.min.css',
+    'node_modules/fotorama/fotorama.css',
+    'node_modules/fotorama/fotorama.css',
+    'node_modules/hamburgers/dist/hamburgers.css',
+    'node_modules/mmenu-js/dist/mmenu.css',
   ])
     .pipe(sourcemaps.init())
     .pipe(concat('libs.min.css')) //склеиваем их в один файл с указанным именем
@@ -96,6 +100,8 @@ gulp.task('script', function () { //аналогично поступаем с j
     'node_modules/swiper/js/swiper.min.js',
     'node_modules/swiper/js/swiper.min.js',
     'node_modules/wow.js/dist/wow.js',
+    'node_modules/fotorama/fotorama.js',
+    'node_modules/mmenu-js/dist/mmenu.js',
   ])
     .pipe(size())
     .pipe(sourcemaps.init())

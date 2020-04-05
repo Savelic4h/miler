@@ -15,4 +15,44 @@ $(function () {
     focusOnSelect: true
   });
   new WOW().init();
+  $(".rateYo").rateYo({
+    rating: 5,
+    starWidth: "14px",
+    spacing: "7px",
+    readOnly: true,
+
+  });
+  $('.clients-slider__inner').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+  });
+  $('.partners__inner').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    speed: 1000,
+    arrows: true,
+    dots: false,
+  });
+  $('#my-menu').mmenu({
+    extensions: ["position-right", "position-back", 'theme-black', 'effect-menu-slide', 'pagedim-black'],
+    navbar: {
+      title: '<img src="img/logo.svg">'
+    },
+    offCanvas: {
+      position: 'right'
+    },
+  });
+  var apiMyMenu = $('#my-menu').data('mmenu');
+
+  apiMyMenu.bind('open:finish', function () {
+    $('.menu-aside__hamburger').addClass('is-active');
+  });
+  apiMyMenu.bind('close:finish', function () {
+    $('.menu-aside__hamburger').removeClass('is-active');
+  });
 });

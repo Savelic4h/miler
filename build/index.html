@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>S&Mitler</title>
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,600,700,800&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
@@ -19,7 +19,7 @@
         <div class="container">
           <header class="header">
             <div class="logo-img">
-              <img src="img/logo.png" alt="">
+              <img src="img/logo.svg" alt="">
             </div>
             <div class="main-page__bot-phone"><a href="tel:74951189435">+7 (495) 118-94-35</a></div>
           </header>
@@ -44,22 +44,34 @@
           </div>
         </div>
         <div class="menu-aside">
-          <div class="menu-aside__burger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <a href="#my-menu" class="menu-aside__hamburger hamburger--collapse-r">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+          </a>
           <ul class="menu-aside__social">
             <li class="social-link icon-facebook"></li>
             <li class="social-link icon-instagram"></li>
             <li class="social-link icon-vk"></li>
           </ul>
         </div>
+        <nav id="my-menu">
+          <ul>
+            <li class="active"><a href="#">Парикмахерский центр</a></li>
+            <li><a href="#">Косметологический сервис</a></li>
+            <li><a href="#">Маникюрный сервис</a></li>
+            <li><a href="#">Массаж</a></li>
+            <li><a href="#">Солярий</a></li>
+            <li><a href="#">Наши специалисты</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Наши сертификаты</a></li>
+            <li><a href="#">О салоне</a></li>
+          </ul>
+        </nav>
       </section>
       <section class="service">
         <div class="service-row">
           <div class="service-row__item service-row__item--first wow fadeInUp">
-            <img class="service-row__img" src="img/mini-logo.png" alt="">
+            <img class="service-row__img" src="img/mini-logo.svg" alt="">
             <div class="service-row__item-title">Косметологический</div>
             <div class="service-row__item-suptitle">Сервис</div>
             <ul class="service-row__item-prices">
@@ -71,7 +83,7 @@
           </div>
           <div class="service-row__item wow fadeInUp" style="background-image:url(img/service1.jpg);"></div>
           <div class="service-row__item service-row__item--second wow fadeInUp">
-            <img class="service-row__img" src="img/mini-logo.png" alt="">
+            <img class="service-row__img" src="img/mini-logo.svg" alt="">
             <div class="service-row__item-title">Маникюрный</div>
             <div class="service-row__item-suptitle">Сервис</div>
             <ul class="service-row__item-prices">
@@ -85,7 +97,7 @@
         <div class="service-row">
           <div class="service-row__item wow fadeInUp" style="background-image:url(img/service2.jpg);"></div>
           <div class="service-row__item service-row__item--third wow fadeInUp">
-            <img class="service-row__img" src="img/mini-logo.png" alt="">
+            <img class="service-row__img" src="img/mini-logo.svg" alt="">
             <div class="service-row__item-title">Парикмахерский</div>
             <div class="service-row__item-suptitle">Сервис</div>
             <ul class="service-row__item-prices">
@@ -114,40 +126,19 @@
                 косметологических
                 процедур и качественный нейл-сервис, а мужчин порадуют услугами стилистов и уходом за лицом</div>
             </div>
+
             <div class="slider__inner wow fadeInRightBig">
-              <div class="slider__big">
-                <div>
-                  <div class="slider__big-item" style="background-image: url(img/swiper-slide1.jpg);"></div>
-                </div>
-                <div>
-                  <div class="slider__big-item" style="background-image: url(img/swiper-slide2.jpg);"></div>
-                </div>
-                <div>
-                  <div class="slider__big-item" style="background-image: url(img/swiper-slide3.jpg);"></div>
-                </div>
-                <div>
-                  <div class="slider__big-item" style="background-image: url(img/swiper-slide4.jpg);"></div>
-                </div>
-                <div>
-                  <div class="slider__big-item" style="background-image: url(img/swiper-slide5.jpg);"></div>
-                </div>
-              </div>
-              <div class="slider__thumbs">
-                <div>
-                  <div class="slider__thumbs-item" style="background-image: url(img/swiper-slide1.jpg);"></div>
-                </div>
-                <div>
-                  <div class="slider__thumbs-item" style="background-image: url(img/swiper-slide2.jpg);"></div>
-                </div>
-                <div>
-                  <div class="slider__thumbs-item" style="background-image: url(img/swiper-slide3.jpg);"></div>
-                </div>
-                <div>
-                  <div class="slider__thumbs-item" style="background-image: url(img/swiper-slide4.jpg);"></div>
-                </div>
-                <div>
-                  <div class="slider__thumbs-item" style="background-image: url(img/swiper-slide5.jpg);"></div>
-                </div>
+              <div class="fotorama" data-nav="thumbs" data-loop="true" data-thumbborderwidth="5" data-thumbwidth="110"
+                data-thumbheight="54">
+                <img src="img/swiper-slide1.jpg">
+                <img src="img/swiper-slide2.jpg">
+                <img src="img/swiper-slide3.jpg">
+                <img src="img/swiper-slide4.jpg">
+                <img src="img/swiper-slide5.jpg">
+                <img src="img/swiper-slide5.jpg">
+                <img src="img/swiper-slide5.jpg">
+                <img src="img/swiper-slide5.jpg">
+                <img src="img/swiper-slide5.jpg">
               </div>
             </div>
           </div>
@@ -155,7 +146,7 @@
       </section>
       <section class="request" style="background-image: url(img/request-woman.jpg);">
         <div class="moving-request wow fadeInRightBig">
-          <img class="request-img" src="img/mini-logo.png" alt="">
+          <img class="request-img" src="img/mini-logo.svg" alt="">
           <div class="moving-request__title">Оставить заявку</div>
           <div class="moving-request__suptitle">Оставьте заявку и мы перезвоним вам в течение 15 минут.</div>
           <form>
@@ -174,9 +165,105 @@
           </form>
         </div>
       </section>
+      <section class="clients" style="background-image: url(img/slider-clients.jpg);">
+        <div class="clients-title wow fadeInDown">Отзывы <span>наших клиентов</span></div>
+        <div class="clients-slider__inner wow fadeInUp  ">
+
+          <div class="slider__item">
+            <div class="slider__item-author">Оксана</div>
+            <div class="slider__item-date">29.07.16 (стрижка)</div>
+            <div class="rateYo"></div>
+            <div class="slider__item-text">Мне очень повезло! Я случайно попала в салон красоты S&Mitler, когда
+              возвращалась с работы. Времени, записываться на стрижку, у меня не было. И, на удачу, я попала в смену
+              стилиста Марины. Я сама не знала, как я хочу постричься, но Марина предлагала несколько вариантов. И в
+              итоге я получила колоссальное удовольствие от конечного итога! Марина с моими волосами сделала что-то
+              невероятно красивое! После стрижки волосы стали более объемными и гладкими! Спасибо Мариночке за
+              индивидуальный подход и качество выполненной работы!!!</div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-author">Андрей</div>
+            <div class="slider__item-date">14.09.16 (стрижка)</div>
+            <div class="rateYo"></div>
+            <div class="slider__item-text">Мне очень повезло! Я случайно попал в салон красоты S&Mitler, когда
+              возвращалcя с работы. Времени, записываться на стрижку, у меня не было. И, на удачу, я попала в смену
+              стилиста Марины. Я сам не знал, как я хочу постричься, но Марина предлагала несколько вариантов. И в
+              итоге я получил колоссальное удовольствие от конечного итога! Марина с моими волосами сделала что-то
+              невероятно красивое! После стрижки волосы стали более объемными и гладкими! Спасибо Мариночке за
+              индивидуальный подход и качество выполненной работы!!!</div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-author">Марина</div>
+            <div class="slider__item-date">13.02.16 (стрижка)</div>
+            <div class="rateYo"></div>
+            <div class="slider__item-text">Мне очень повезло! Я случайно попала в салон красоты S&Mitler, когда
+              возвращалась с работы. Времени, записываться на стрижку, у меня не было. И, на удачу, я попала в смену
+              стилиста Марины. Я сама не знала, как я хочу постричься, но Марина предлагала несколько вариантов. И в
+              итоге я получила колоссальное удовольствие от конечного итога! Марина с моими волосами сделала что-то
+              невероятно красивое! После стрижки волосы стали более объемными и гладкими! Спасибо Мариночке за
+              индивидуальный подход и качество выполненной работы!!!</div>
+          </div>
+        </div>
+      </section>
+      <section class="partners" style="background-image: url(img/partners-bg.jpg);">
+        <div class="partners-title">Наши партнеры</div>
+        <div class="partners__inner">
+          <div>
+            <div class="partners__item" style="background-image: url(img/brend1.png);"></div>
+          </div>
+          <div>
+            <div class="partners__item" style="background-image: url(img/brend2.png);"></div>
+          </div>
+          <div>
+            <div class="partners__item" style="background-image: url(img/brend3.png);"></div>
+          </div>
+          <div>
+            <div class="partners__item" style="background-image: url(img/brend4.png);"></div>
+          </div>
+          <div>
+            <div class="partners__item" style="background-image: url(img/brend1.png);"></div>
+          </div>
+          <div>
+            <div class="partners__item" style="background-image: url(img/brend2.png);"></div>
+          </div>
+          <div>
+            <div class="partners__item" style="background-image: url(img/brend3.png);"></div>
+          </div>
+          <div>
+            <div class="partners__item" style="background-image: url(img/brend4.png);"></div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
-
+      <div class="footer__wrapper">
+        <div class="footer__info">
+          <div class="footer-logo" style="background-image: url(img/logo.svg);"></div>
+          <div class="footer-logo__suptext">Cалон красоты бизнес-класса Москве</div>
+          <ul class="footer__social">
+            <li class="footer__social-item icon-facebook"><a href="#"></a></li>
+            <li class="footer__social-item icon-instagram"><a href="#"></a></li>
+            <li class="footer__social-item icon-vk"><a href="#"></a></li>
+          </ul>
+        </div>
+        <ul class="footer__nav">
+          <li><a href="#">Парикмахерский сервис</a></li>
+          <li><a href="#">Косметологический сервис</a></li>
+          <li><a href="#">Маникюрный сервис</a></li>
+          <li><a href="#">Массаж и SPA</a></li>
+          <li><a href="#">Солярий</a></li>
+          <li><a href="#">Наши специалисты</a></li>
+        </ul>
+        <div class="">
+          <div class="footer__loc-adress">г. Москва, ул. Ивана Бабушкина, 22с1</div>
+          <div class="footer__loc-time">Время работы: ежедневно: 10:00 - 22:00</div>
+          <a href="tel:74951189435" class="footer__loc-phone">+7 (495) 118-94-35</a>
+        </div>
+        <div class="footer__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A08e766ae2b1d0d3e5e45814ec73ef46338094302a0c569f707244aabaae09efe&amp;source=constructor"
+            width="360" height="205 " frameborder="0"></iframe>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
