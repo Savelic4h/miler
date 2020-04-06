@@ -664,12 +664,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  position: relative;
 }
 .partners__inner{
   max-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
-  position: relative;
   .slick-track{
     display: flex;
   }
@@ -681,8 +681,8 @@
       color: #999999;
       font-family: 'icomoon';
       opacity: 1;
-      left: -100px;
-      top: -10px;
+      left: 12%;
+      top: 60%;
     }
   } 
   .slick-next{
@@ -693,8 +693,8 @@
       color: #999999;
       font-family: 'icomoon';
       opacity: 1;
-      right: -50px;
-      top: -10px;
+      right: 12%;
+      top: 60%;
     }
   }
 }
