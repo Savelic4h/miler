@@ -558,6 +558,7 @@
   }
 }
 .clients-slider__inner{
+  position: relative;
   .slick-track{
     display: flex;
   }
@@ -565,6 +566,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 12%;
     .slick-active{
       background-color: $yellow;
       height: 11px;
