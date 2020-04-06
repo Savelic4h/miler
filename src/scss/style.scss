@@ -592,6 +592,9 @@
 .slider__item{
   text-align: center;
 }
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 .slider__item-author{
   font-weight: 700;
   font-style: italic;
@@ -665,6 +668,9 @@
 .partners__inner{
   max-width: 1100px;
   margin: 0 auto;
+  .slick-track{
+    display: flex;
+  }
   .slick-prev{
     &:before{
       content: "\f104";
