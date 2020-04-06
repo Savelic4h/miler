@@ -566,8 +566,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 12%;
+    bottom: 0 !important;
     .slick-active{
       background-color: $yellow;
       height: 11px;
