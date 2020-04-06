@@ -668,6 +668,8 @@
 .partners__inner{
   max-width: 1100px;
   margin: 0 auto;
+  overflow: hidden;
+  position: relative;
   .slick-track{
     display: flex;
   }
