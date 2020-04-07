@@ -123,7 +123,7 @@
   }
 }
 .main-page__bot{
-  height: 56px;
+  min-height: 56px;
   position: absolute;
   top: calc(100vh - 56px);
   left: 0;
@@ -149,6 +149,7 @@
   }
 }
 .main-page__bot-phone,
+.main-page__phone,
 .footer__loc-phone{
   padding-left: 22px;
   position: relative;
@@ -390,19 +391,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 85px 100px;
+  padding: 85px 0;
   position: relative;
   overflow: hidden;
-  &:before{
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: rgba(61, 60, 60, 0.9);
-  }
 }
 .slider__wrapper{
   display: flex;
@@ -435,16 +426,29 @@
       position: absolute;
       bottom: 15px;
       width: 100%;
+      padding: 0 30px;    
     }
   }
 &__thumb{
   box-sizing: border-box;
-  border: 5px solid #fff;
+  border: 4px solid #fff;
   transition: border-color .5s;
   &-border{
     border-color: #3d3c3c;
     }
   }
+  &__nav:after,&__nav:before,&_stage:after,&_stage:before{
+    display: none;
+  }
+  &__active{
+    .fotorama__thumb{
+      border-color: #3d3c3c;
+    }
+  }
+}
+.fotorama__wrap--css3 .fotorama__html, .fotorama__wrap--css3 .fotorama__stage .fotorama__img{
+  max-width: 655px !important;
+  width: 100% !important;
 }
 
 // ------------------------
@@ -643,20 +647,16 @@
 // ------------------------
 //partners
 // ------------------------
-
 .partners{
-  padding: 80px 0 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding-top: 85px;
+  padding-bottom: 110px;
 }
 .partners-title{
   font-size: 30px;
-  text-transform: uppercase;
-  color: $yellow;
-  margin-bottom: 75px;
   font-weight: 800;
+  color: $yellow;
   text-align: center;
+  padding-bottom: 80px;
 }
 .partners__item{
   height: 110px;
@@ -669,34 +669,6 @@
 .partners__inner{
   max-width: 1100px;
   margin: 0 auto;
-  overflow: hidden;
-  .slick-track{
-    display: flex;
-  }
-  .slick-prev{
-    &:before{
-      content: "\f104";
-      position: absolute;
-      font-size: 30px;
-      color: #999999;
-      font-family: 'icomoon';
-      opacity: 1;
-      left: 12%;
-      top: 60%;
-    }
-  } 
-  .slick-next{
-    &:before{
-      content: "\f105";
-      position: absolute;
-      font-size: 30px;
-      color: #999999;
-      font-family: 'icomoon';
-      opacity: 1;
-      right: 12%;
-      top: 60%;
-    }
-  }
 }
 
 // ------------------------
@@ -711,6 +683,7 @@
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .footer__info{
   max-width: 170px;
