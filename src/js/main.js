@@ -37,6 +37,29 @@ $(function () {
     speed: 1000,
     arrows: true,
     dots: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 725,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
   $('#my-menu').mmenu({
     extensions: ["position-right", "position-back", 'theme-black', 'effect-menu-slide', 'pagedim-black'],
