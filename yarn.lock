@@ -1816,9 +1816,9 @@ homedir-polyfill@^1.0.1:
     parse-passwd "^1.0.0"
 
 hosted-git-info@^2.1.4:
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.5.tgz#759cfcf2c4d156ade59b0b2dfabddc42a6b9c70c"
-  integrity sha512-kssjab8CvdXfcXMXVcvsXum4Hwdq9XGtRD3TteMEvEbq0LXyiNQr6AprqKqfeaDXze7SxWvRxdpwE6ku7ikLkg==
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 http-errors@1.7.3:
   version "1.7.3"
@@ -2596,6 +2596,11 @@ mixin-deep@^1.2.0:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mmenu-js@^8.5.3:
+  version "8.5.23"
+  resolved "https://registry.yarnpkg.com/mmenu-js/-/mmenu-js-8.5.23.tgz#0359639168087ed0e696cc1c2e414f959582d085"
+  integrity sha512-CTtCe7NKkyxA/ueSC0zCG3lq90BVLUMV0iQf5Cft8o+ACFEtJmdkntldDh0HIy/ekhKZdB3jFAOTrB7LZ7Ekrg==
 
 ms@2.0.0:
   version "2.0.0"
