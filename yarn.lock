@@ -2597,6 +2597,11 @@ mixin-deep@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
+mmenu-js@^8.5.3:
+  version "8.5.23"
+  resolved "https://registry.yarnpkg.com/mmenu-js/-/mmenu-js-8.5.23.tgz#0359639168087ed0e696cc1c2e414f959582d085"
+  integrity sha512-CTtCe7NKkyxA/ueSC0zCG3lq90BVLUMV0iQf5Cft8o+ACFEtJmdkntldDh0HIy/ekhKZdB3jFAOTrB7LZ7Ekrg==
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -3051,9 +3056,9 @@ postcss-value-parser@^4.0.2:
   integrity sha512-LmeoohTpp/K4UiyQCwuGWlONxXamGzCMtFxLq4W1nZVGIQLYvMCJx3yAF9qyyuFpflABI9yVdtJAqbihOsCsJQ==
 
 postcss@^7.0.17, postcss@^7.0.23:
-  version "7.0.26"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.26.tgz#5ed615cfcab35ba9bbb82414a4fa88ea10429587"
-  integrity sha512-IY4oRjpXWYshuTDFxMVkJDtWIk2LhsTlu8bZnbEJA4+bYT16Lvpo8Qv6EvDumhYRgzjZl489pmsY3qVgJQ08nA==
+  version "7.0.36"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
+  integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
